@@ -6,10 +6,10 @@ const result = document.querySelector("#result") as HTMLParagraphElement;
 
 const handleCheck = () => {
   const checkString = input.value.trim();
-
   console.log("Check String:", checkString);
-  const regex = /(?!\_)[0-9A-z]\w*/g;
-  const found = checkString.match(regex)?.join(" ");
+
+  const regex = /[0-9a-zA-Z]/g;
+  const found = checkString.match(regex)?.join("");
   console.log("Found:", found);
 
   if (!found === null || found === undefined) {
@@ -20,9 +20,9 @@ const handleCheck = () => {
   const foundReverse = found.split("").reverse().join("");
 
   if (found.toLowerCase() === foundReverse.toLowerCase()) {
-    result.innerHTML = `<span class="font-bold">${found}</span> is a palindrome`;
+    result.innerHTML = `<span class="font-bold">${checkString}</span> is a palindrome`;
   } else {
-    result.innerHTML = `<span class="font-bold">${found}</span> is not a palindrome`;
+    result.innerHTML = `<span class="font-bold">${checkString}</span> is not a palindrome`;
   }
   console.log("Check:", found, foundReverse);
 };
