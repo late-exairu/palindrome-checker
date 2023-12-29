@@ -2,8 +2,8 @@
 
 ## Overview
 
-This project is a Palindrome Checker app that allows users to determine whether a given word or phrase is a palindrome. A palindrome is a word, phrase, number, or other sequences of characters that reads the same forward and backward, ignoring punctuation, case, and spacing.
-This project is a part of JavaScript Algorithms and Data Structures Certification by [CodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-palindrome-checker-project/build-a-palindrome-checker).
+This project is a Palindrome Checker app that allows users to determine whether a given word or phrase is a palindrome. A palindrome is a word, phrase, number, or other sequences of characters that reads the same forward and backward, ignoring punctuation, case, and spacing.  
+Project is a part of JavaScript Algorithms and Data Structures Certification by [CodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-palindrome-checker-project/build-a-palindrome-checker).
 
 ## Features
 
