@@ -10,7 +10,37 @@
   <body>
     <div class="flex min-h-dvh items-center">
       <div class="container mx-auto px-5">
-        <p class="bold text-2xl">Start</p>
+        <div class="mx-auto max-w-96">
+          <p class="mb-5 text-center text-3xl font-bold">Is it a Palindrome?</p>
+
+          <div class="my-5 flex gap-3 md:gap-4">
+            <input
+              type="text"
+              id="text-input"
+              class="w-full rounded-md border border-gray-400 p-2 text-slate-800"
+              placeholder="Enter a word or phrase"
+            />
+
+            <button
+              id="check-btn"
+              class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+            >
+              Check
+            </button>
+          </div>
+
+          <div class="my-5">
+            <div id="result" class="text-xl"></div>
+          </div>
+
+          <div class="mt-5">
+            <blockquote>
+              💡 A palindrome is a word or sentence that's spelled the same way
+              both forward and backward, ignoring punctuation, case, and
+              spacing.
+            </blockquote>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
