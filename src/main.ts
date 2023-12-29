@@ -5,14 +5,11 @@ const input = document.querySelector("#text-input") as HTMLInputElement;
 const result = document.querySelector("#result") as HTMLParagraphElement;
 
 const handleCheck = () => {
-  const checkString = input.value.trim();
-  console.log("Check String:", checkString);
-
+  const checkString = input.value;
   const regex = /[0-9a-zA-Z]/g;
   const found = checkString.match(regex)?.join("");
-  console.log("Found:", found);
 
-  if (!found === null || found === undefined) {
+  if (!found) {
     alert("Please input a value");
     return;
   }
@@ -24,7 +21,6 @@ const handleCheck = () => {
   } else {
     result.innerHTML = `<span class="font-bold">${checkString}</span> is not a palindrome`;
   }
-  console.log("Check:", found, foundReverse);
 };
 
 check?.addEventListener("click", handleCheck);
