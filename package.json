@@ -1,9 +1,12 @@
 {
+  "homepage": "https://late-exairu.github.io/palindrome-checker",
   "name": "palindrome-checker",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -19,5 +22,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
