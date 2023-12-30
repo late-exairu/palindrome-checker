@@ -5,42 +5,46 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Palindrome Checker</title>
-    <script type="module" crossorigin src="/palindrome-checker/assets/index-yDWfQ9i9.js"></script>
-    <link rel="stylesheet" crossorigin href="/palindrome-checker/assets/index-FRjhVfiG.css">
+    <script type="module" crossorigin src="/palindrome-checker/assets/index-KIgZMMvN.js"></script>
+    <link rel="stylesheet" crossorigin href="/palindrome-checker/assets/index-HZThOOoD.css">
   </head>
   <body class="bg-slate-800">
     <div class="flex min-h-dvh items-center">
       <div class="container mx-auto px-5">
         <div class="mx-auto max-w-96">
-          <p class="mb-5 text-center text-3xl font-bold">Is it a Palindrome?</p>
+          <h1 class="mb-5 text-center text-3xl font-bold">
+            Is it a Palindrome?
+          </h1>
 
-          <div class="my-5 flex gap-3 md:gap-4">
-            <input
-              type="text"
-              id="text-input"
-              class="w-full rounded-md border border-gray-400 p-2 text-slate-800"
-              placeholder="Enter a word or phrase"
-            />
+          <form class="my-5" id="form">
+            <div class="flex gap-3 md:gap-4">
+              <input
+                type="text"
+                id="text-input"
+                class="w-full rounded-md border border-gray-400 p-2 text-slate-800"
+                placeholder="Enter a word or phrase"
+              />
 
-            <button
-              id="check-btn"
-              class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
-            >
-              Check
-            </button>
-          </div>
+              <button
+                id="check-btn"
+                class="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+              >
+                Check
+              </button>
+            </div>
 
-          <div class="my-5">
-            <div id="result" class="text-xl"></div>
-          </div>
+            <div class="my-5">
+              <div id="result" class="text-xl"></div>
+            </div>
 
-          <div class="mt-5">
-            <blockquote class="rounded-lg bg-slate-700 p-3">
-              💡 A palindrome is a word or sentence that's spelled the same way
-              both forward and backward, ignoring punctuation, case, and
-              spacing.
-            </blockquote>
-          </div>
+            <div class="mt-5">
+              <blockquote class="rounded-lg bg-slate-700 p-3">
+                💡 A palindrome is a word or sentence that's spelled the same
+                way both forward and backward, ignoring punctuation, case, and
+                spacing.
+              </blockquote>
+            </div>
+          </form>
         </div>
       </div>
     </div>
