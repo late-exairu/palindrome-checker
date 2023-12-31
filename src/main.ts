@@ -1,8 +1,6 @@
-"use strict";
-
 const check = document.querySelector("#check-btn") as HTMLButtonElement;
 const input = document.querySelector("#text-input") as HTMLInputElement;
-const result = document.querySelector("#result") as HTMLParagraphElement;
+const result = document.querySelector("#result") as HTMLDivElement;
 
 const handleCheck = (e: Event) => {
   e.preventDefault();
